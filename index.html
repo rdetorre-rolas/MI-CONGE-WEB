@@ -569,10 +569,12 @@
   var genericMsg = 'Hola, vi su página web y me interesa cotizar productos de Mi Conge.';
   var hogarMsg = 'Hola, vi la sección Mi Conge Hogar y quiero hacer un pedido para mi casa.';
   var listaMsg = 'Hola, me gustaría que me envíen su lista de precios de mayoreo.';
-  ['waNavBtn','waNavBtnMobile','waFloatBtn','waFooterBtn'].forEach(function(id){
+  ['waNavBtnMobile','waFloatBtn','waFooterBtn'].forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.setAttribute('href', waLink(genericMsg));
   });
+  var waNavBtn = document.getElementById('waNavBtn');
+  if(waNavBtn) waNavBtn.setAttribute('href', waLink(genericMsg, WA_PHONE_MAYOREO));
   var waHogarBtn = document.getElementById('waHogarBtn');
   if(waHogarBtn) waHogarBtn.setAttribute('href', waLink(hogarMsg, WA_PHONE_HOGAR));
   ['pedirListaHeroBtn'].forEach(function(id){
