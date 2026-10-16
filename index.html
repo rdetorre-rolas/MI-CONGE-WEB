@@ -168,6 +168,13 @@
   <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.6.7 5 2 7.1L3 29l6.1-1.9c2 1.1 4.3 1.8 6.9 1.8 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.3 0-4.4-.6-6.3-1.8l-.5-.3-4.5 1.4 1.4-4.4-.3-.5c-1.3-2-2-4.3-2-6.8 0-6.1 5-11.1 11.1-11.1S27.1 9.9 27.1 16 22.1 26.7 16 26.7zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-1.1-.6-2.3-1.4-3.3-2.5-.8-.9-1.5-1.9-2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.8.2-.2.2-.4.1-.7-.2-.3-.9-2.1-1.2-2.9-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.2 3.4 5.3 4.7 2.6 1.1 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
 </a>
 
+<!-- ============ FACEBOOK FLOTANTE ============ -->
+<a href="https://www.facebook.com/profile.php?id=61590863661369" target="_blank" rel="noopener" id="fbFloatBtn" aria-label="Facebook de Mi Conge"
+   class="fixed z-50 right-5 md:right-7 w-14 h-14 rounded-full bg-[#1877F2] hover:bg-[#166FE5] text-white flex items-center justify-center shadow-xl transition-colors"
+   style="bottom:calc(89px + env(safe-area-inset-bottom,0px));">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+</a>
+
 <!-- ============ CARRITO DE PEDIDO (catalogo) ============ -->
 <div id="cartBar" class="cart-bar cart-hidden">
   <div class="cart-bar-top">
@@ -731,6 +738,7 @@
   var hogarMsg = 'Hola, vi la sección Mi Conge Hogar y quiero hacer un pedido para mi casa.';
   var listaMsg = 'Hola, me gustaría que me envíen su lista de precios de mayoreo.';
   var waFloatBtn = document.getElementById('waFloatBtn');
+  var fbFloatBtn = document.getElementById('fbFloatBtn');
   ['waNavBtnMobile','waFloatBtn','waFooterBtn'].forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.setAttribute('href', waLink(genericMsg));
@@ -1051,10 +1059,12 @@
     if(count > 0){
       bar.classList.remove('cart-hidden');
       if(waFloatBtn) waFloatBtn.style.bottom = 'calc(86px + 1.25rem + env(safe-area-inset-bottom,0px))';
+      if(fbFloatBtn) fbFloatBtn.style.bottom = 'calc(86px + 89px + env(safe-area-inset-bottom,0px))';
     } else {
       bar.classList.add('cart-hidden');
       panel.classList.add('cart-hidden');
       if(waFloatBtn) waFloatBtn.style.bottom = 'calc(1.25rem + env(safe-area-inset-bottom,0px))';
+      if(fbFloatBtn) fbFloatBtn.style.bottom = 'calc(89px + env(safe-area-inset-bottom,0px))';
     }
   }
   function setQty(code, qty){
