@@ -80,8 +80,8 @@
   .checkout-field input{ width:100%; border:1.5px solid #E5E7EB; border-radius:.6rem; padding:.65rem .8rem; font-family:'Plus Jakarta Sans',sans-serif; font-size:.85rem; color:#0B1E33; box-sizing:border-box; }
   .checkout-field input:focus{ outline:none; border-color:#10B981; }
   .checkout-back{ background:none; border:0; color:#10B981; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.8rem; cursor:pointer; padding:0; margin-bottom:1rem; }
-  .checkout-submit{ width:100%; display:flex; align-items:center; justify-content:center; gap:.5rem; background:#10B981; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:.9rem; padding:.9rem 1rem; border-radius:.75rem; border:0; cursor:pointer; margin-top:.5rem; }
-  .checkout-submit:hover{ background:#0EA271; }
+  .checkout-submit{ width:100%; display:flex; align-items:center; justify-content:center; gap:.5rem; background:#25D366; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:.9rem; padding:.9rem 1rem; border-radius:.75rem; border:0; cursor:pointer; margin-top:.5rem; }
+  .checkout-submit:hover{ background:#1EBE5A; }
   .checkout-submit:disabled{ opacity:.5; cursor:not-allowed; }
   .checkout-error{ color:#DC2626; font-family:'Plus Jakarta Sans',sans-serif; font-size:.75rem; margin-top:.5rem; display:none; }
   .checkout-error.chk-show{ display:block; }
@@ -100,6 +100,9 @@
   /* ---- Elementos que regresan al azul original de Mi Conge ---- */
   .brand-blue-bg{ background-color:#0284C7 !important; }
   .brand-blue-text{ color:#0284C7 !important; }
+  /* ---- Botones de WhatsApp: verde oficial de marca, consistente en todo el sitio ---- */
+  .bg-whatsapp{ background-color:#25D366 !important; }
+  .hover\:bg-whatsapp-dark:hover{ background-color:#1EBE5A !important; }
   .fb-fab{ background-color:#1877F2 !important; }
   .fb-fab:hover{ background-color:#166FE5 !important; }
   /* ---- Sistema tipográfico editorial (inspirado en catálogos premium de marca) ---- */
@@ -147,8 +150,8 @@
   .cart-total{ font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; color:var(--ink); }
   .cart-actions{ display:flex; align-items:center; gap:.75rem; }
   .cart-clear{ font-size:.75rem; color:var(--ink-soft); text-decoration:underline; background:none; border:0; cursor:pointer; }
-  .cart-send{ display:inline-flex; align-items:center; gap:.5rem; background:#10B981; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.875rem; padding:.75rem 1.25rem; border-radius:.75rem; text-decoration:none; transition:background-color .15s ease; }
-  .cart-send:hover{ background:#0EA271; }
+  .cart-send{ display:inline-flex; align-items:center; gap:.5rem; background:#25D366; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.875rem; padding:.75rem 1.25rem; border-radius:.75rem; text-decoration:none; transition:background-color .15s ease; }
+  .cart-send:hover{ background:#1EBE5A; }
   .cart-panel{ border-top:1px solid var(--line); max-height:16rem; overflow-y:auto; }
   .cart-panel.cart-hidden{ display:none; }
   .cart-panel-inner{ max-width:80rem; margin:0 auto; padding:.75rem 1.25rem; display:flex; flex-direction:column; gap:.6rem; }
@@ -179,9 +182,9 @@
 
 <!-- ============ WHATSAPP FLOTANTE ============ -->
 <a href="#" id="waFloatBtn" aria-label="Escribir por WhatsApp"
-   class="fixed z-50 bottom-5 right-5 md:bottom-7 md:right-7 w-14 h-14 rounded-full bg-emerald hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl shadow-emerald/30 transition-colors"
+   class="fixed z-50 bottom-5 right-5 md:bottom-7 md:right-7 w-14 h-14 rounded-full bg-whatsapp hover:bg-whatsapp-dark text-white flex items-center justify-center shadow-xl shadow-emerald/30 transition-colors"
    style="bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));">
-  <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.6.7 5 2 7.1L3 29l6.1-1.9c2 1.1 4.3 1.8 6.9 1.8 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.3 0-4.4-.6-6.3-1.8l-.5-.3-4.5 1.4 1.4-4.4-.3-.5c-1.3-2-2-4.3-2-6.8 0-6.1 5-11.1 11.1-11.1S27.1 9.9 27.1 16 22.1 26.7 16 26.7zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-1.1-.6-2.3-1.4-3.3-2.5-.8-.9-1.5-1.9-2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.8.2-.2.2-.4.1-.7-.2-.3-.9-2.1-1.2-2.9-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.2 3.4 5.3 4.7 2.6 1.1 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
 </a>
 
 <!-- ============ FACEBOOK FLOTANTE ============ -->
@@ -207,7 +210,7 @@
     <div class="cart-actions">
       <button type="button" id="cartClearBtn" class="cart-clear">Vaciar</button>
       <button type="button" id="cartSendBtn" class="cart-send">
-        <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.6.7 5 2 7.1L3 29l6.1-1.9c2 1.1 4.3 1.8 6.9 1.8 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.3 0-4.4-.6-6.3-1.8l-.5-.3-4.5 1.4 1.4-4.4-.3-.5c-1.3-2-2-4.3-2-6.8 0-6.1 5-11.1 11.1-11.1S27.1 9.9 27.1 16 22.1 26.7 16 26.7zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-1.1-.6-2.3-1.4-3.3-2.5-.8-.9-1.5-1.9-2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.8.2-.2.2-.4.1-.7-.2-.3-.9-2.1-1.2-2.9-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.2 3.4 5.3 4.7 2.6 1.1 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
         Enviar pedido por WhatsApp
       </button>
     </div>
@@ -249,7 +252,7 @@
         <label for="chkNumCliente">Número de cliente</label>
         <input type="text" id="chkNumCliente" placeholder="Ej. 1024" inputmode="numeric">
       </div>
-      <button type="button" id="chkSubmitActivo" class="checkout-submit" disabled>Enviar pedido por WhatsApp</button>
+      <button type="button" id="chkSubmitActivo" class="checkout-submit" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>Enviar pedido por WhatsApp</button>
       <p id="chkErrorActivo" class="checkout-error">Ingresa tu número de cliente.</p>
     </div>
 
@@ -264,7 +267,7 @@
       <div class="checkout-field"><label for="chkColonia">Colonia</label><input type="text" id="chkColonia"></div>
       <div class="checkout-field"><label for="chkMunicipio">Municipio</label><input type="text" id="chkMunicipio"></div>
       <div class="checkout-field"><label for="chkCP">Código postal</label><input type="text" id="chkCP" inputmode="numeric"></div>
-      <button type="button" id="chkSubmitNuevo" class="checkout-submit" disabled>Enviar pedido por WhatsApp</button>
+      <button type="button" id="chkSubmitNuevo" class="checkout-submit" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>Enviar pedido por WhatsApp</button>
       <p id="chkErrorNuevo" class="checkout-error">Completa todos los datos para continuar.</p>
     </div>
   </div>
@@ -288,8 +291,8 @@
          class="header-fb-icon transition-colors">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
       </a>
-      <a href="#" id="waNavBtn" class="inline-flex items-center gap-2 bg-emerald hover:bg-emerald-600 text-white font-display font-bold text-sm px-4 py-2.5 rounded-full transition-colors">
-        <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.6.7 5 2 7.1L3 29l6.1-1.9c2 1.1 4.3 1.8 6.9 1.8 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.3 0-4.4-.6-6.3-1.8l-.5-.3-4.5 1.4 1.4-4.4-.3-.5c-1.3-2-2-4.3-2-6.8 0-6.1 5-11.1 11.1-11.1S27.1 9.9 27.1 16 22.1 26.7 16 26.7zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-1.1-.6-2.3-1.4-3.3-2.5-.8-.9-1.5-1.9-2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.8.2-.2.2-.4.1-.7-.2-.3-.9-2.1-1.2-2.9-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.2 3.4 5.3 4.7 2.6 1.1 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      <a href="#" id="waNavBtn" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-display font-bold text-sm px-4 py-2.5 rounded-full transition-colors">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
         Pedir por WhatsApp
       </a>
     </div>
@@ -303,7 +306,7 @@
     <a href="#catalogo" class="block">Catálogo</a>
     <a href="#diferenciadores" class="block">Diferenciadores</a>
     <a href="#contacto" class="block">Contacto</a>
-    <a href="#" id="waNavBtnMobile" class="inline-flex items-center gap-2 bg-emerald text-white font-bold text-sm px-4 py-2.5 rounded-full">Pedir por WhatsApp</a>
+    <a href="#" id="waNavBtnMobile" class="inline-flex items-center gap-2 bg-whatsapp text-white font-bold text-sm px-4 py-2.5 rounded-full"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>Pedir por WhatsApp</a>
     <a href="https://www.facebook.com/profile.php?id=61590863661369" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-navy/70">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
       Facebook
@@ -325,8 +328,8 @@
         Abastecemos en tiempo, calidad, cantidad y forma cada una de tus sucursales o puntos de venta.
       </p>
       <div class="mt-9 flex flex-wrap gap-4">
-        <a href="#" id="pedirListaHeroBtn" class="inline-flex items-center gap-2 bg-amber hover:bg-amber-600 text-white font-display font-bold px-6 py-3.5 rounded-full shadow-lg shadow-amber/20 transition-colors">
-          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.6.7 5 2 7.1L3 29l6.1-1.9c2 1.1 4.3 1.8 6.9 1.8 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.3 0-4.4-.6-6.3-1.8l-.5-.3-4.5 1.4 1.4-4.4-.3-.5c-1.3-2-2-4.3-2-6.8 0-6.1 5-11.1 11.1-11.1S27.1 9.9 27.1 16 22.1 26.7 16 26.7zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-1.1-.6-2.3-1.4-3.3-2.5-.8-.9-1.5-1.9-2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.8.2-.2.2-.4.1-.7-.2-.3-.9-2.1-1.2-2.9-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.2 3.4 5.3 4.7 2.6 1.1 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+        <a href="#" id="pedirListaHeroBtn" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-display font-bold px-6 py-3.5 rounded-full shadow-lg shadow-emerald/20 transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
           Pide nuestra lista de precios
         </a>
         <a href="#catalogo" class="inline-flex items-center gap-2 bg-transparent border-2 text-white font-display font-bold px-6 py-3.5 rounded-full transition-colors" style="border-color:rgba(255,255,255,.35);">
@@ -374,6 +377,35 @@
       <span>McCain</span><span>Lamb Weston</span><span>Simplot</span><span>Pilgrim's</span>
       <span>Konsupollo</span><span>Ariztia</span><span>Seara</span><span>Chipinque</span><span>La Pócima</span>
     </div>
+  </div>
+</section>
+
+<!-- ============ CATÁLOGO ============ -->
+<section id="catalogo" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex flex-wrap items-start justify-between gap-6 mb-10">
+      <div class="max-w-2xl">
+        <p class="eyebrow text-amber mb-2">Catálogo interactivo</p>
+        <h2 class="editorial-h2 text-navy">Más de 65 productos, listos para tu próximo pedido</h2>
+        <p class="ink-soft mt-4">Filtra por categoría, agrega los productos que necesitas con su cantidad y envíanos tu pedido completo por WhatsApp en un solo mensaje. Precios en MXN, sujetos a cambio sin previo aviso.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-sm font-display font-semibold text-navy">
+      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">1</span>Elige una categoría</span>
+      <span class="ink-soft">→</span>
+      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">2</span>Agrega productos y cantidades</span>
+      <span class="ink-soft">→</span>
+      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">3</span>Envía tu pedido por WhatsApp</span>
+    </div>
+
+    <div id="cutsGrid" class="cuts-grid mb-10"></div>
+
+    <p id="pickHint" class="text-center ink-soft py-10">Elige una categoría para ver los productos.</p>
+
+    <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+    <p id="emptyState" class="hidden text-center ink-soft py-14">No encontramos productos en esta categoría por ahora.</p>
   </div>
 </section>
 
@@ -474,7 +506,8 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Cómo llegar
           </a>
-          <a href="#" id="waHogarBtn" class="inline-flex items-center gap-2 bg-white border-2 border-glacial-100 hover:border-emerald text-navy font-display font-bold px-6 py-3.5 rounded-xl transition-colors">
+          <a href="#" id="waHogarBtn" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-display font-bold px-6 py-3.5 rounded-xl transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
             Mándanos un WhatsApp
           </a>
         </div>
@@ -513,34 +546,6 @@
   </div>
 </section>
 
-<!-- ============ CATÁLOGO ============ -->
-<section id="catalogo" class="py-20 md:py-28">
-  <div class="max-w-7xl mx-auto px-5 md:px-8">
-    <div class="flex flex-wrap items-start justify-between gap-6 mb-10">
-      <div class="max-w-2xl">
-        <p class="eyebrow text-amber mb-2">Catálogo interactivo</p>
-        <h2 class="editorial-h2 text-navy">Más de 65 productos, listos para tu próximo pedido</h2>
-        <p class="ink-soft mt-4">Filtra por categoría, agrega los productos que necesitas con su cantidad y envíanos tu pedido completo por WhatsApp en un solo mensaje. Precios en MXN, sujetos a cambio sin previo aviso.</p>
-      </div>
-    </div>
-
-    <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-sm font-display font-semibold text-navy">
-      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">1</span>Elige una categoría</span>
-      <span class="ink-soft">→</span>
-      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">2</span>Agrega productos y cantidades</span>
-      <span class="ink-soft">→</span>
-      <span class="flex items-center gap-2"><span class="w-5 h-5 rounded-full brand-blue-bg text-white text-xs flex items-center justify-center flex-shrink-0">3</span>Envía tu pedido por WhatsApp</span>
-    </div>
-
-    <div id="cutsGrid" class="cuts-grid mb-10"></div>
-
-    <p id="pickHint" class="text-center ink-soft py-10">Elige una categoría para ver los productos.</p>
-
-    <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-
-    <p id="emptyState" class="hidden text-center ink-soft py-14">No encontramos productos en esta categoría por ahora.</p>
-  </div>
-</section>
 
 <!-- ============ POR QUÉ ELEGIRNOS ============ -->
 <section id="diferenciadores" class="surface py-20 md:py-28 border-y line-b">
@@ -722,7 +727,8 @@
       </div>
       <div>
         <p class="font-display font-bold text-navy mb-4">Contáctanos ahora</p>
-        <a href="#" id="waFooterBtn" class="inline-flex items-center gap-2 bg-emerald hover:bg-emerald-600 text-white font-display font-bold text-sm px-5 py-3 rounded-full transition-colors mb-3">
+        <a href="#" id="waFooterBtn" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-display font-bold text-sm px-5 py-3 rounded-full transition-colors mb-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
           Escribir por WhatsApp
         </a>
         <p class="ink-soft text-sm">Horario de atención: Lunes a sábado</p>
