@@ -29,3 +29,11 @@
 - Mi Conge Hogar: https://miconge.com/#hogar
 - Catálogo: https://miconge.com/#catalogo
 - Contacto: https://miconge.com/#contacto
+
+## Catálogo por categoría
+- Pollo congelado al mayoreo en Monterrey: https://miconge.com/pollo-congelado/
+- Papas congeladas al mayoreo en Monterrey: https://miconge.com/papas-congeladas/
+- Quesos para restaurantes al mayoreo en Monterrey: https://miconge.com/quesos/
+- Carne de res y puerco congelada al mayoreo en Monterrey: https://miconge.com/carne-de-res-y-puerco/
+- Salsas y aderezos para restaurantes en Monterrey: https://miconge.com/salsas-y-aderezos/
+- Empanizados, botanas congeladas y aceite al mayoreo en Monterrey: https://miconge.com/empanizados-botanas-y-aceites/
